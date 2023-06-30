@@ -34,7 +34,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The image above shows all the prerequisites downloaded to begin our installation of osTicket.  The steps I took to get to this result are the following:
+  
+ - A virtual machine created in Azure with 2-4 Virtual CPUs
+ - Install | Enable IIS in Windows with CGI and Common HTTP features
+ - Install PHP manager for IIS, Rewrite Module, PHP 7.3.8, VC_redist.x86.exe, and MySQL 5.5.62
+ - Created a directory for PHP on the c drive
+  
 </p>
 <br />
 
@@ -42,7 +48,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this step, I registered PHP from within IIS. The steps taken are the following:
+
+  - Open IIS as an administrator (type in start menu IIS and right-click to run as administrator)
+  - Click on PHP manager
+  - Register new PHP version: Browse and go to the c drive to register with PHP we created in our first few steps
+  - Reload IIS ( you can choose to end and start the server or you can choose to restart it)
 </p>
 <br />
 
@@ -50,6 +61,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this image, you find the completed installation of osTicket v1.15.8 following these final steps in our installation from our prerequisites. 
+  
+  - Install the osTicket file
+  - Extract and copy the "upload" folder to c:\inetpub\wwwroot
+  - In the c:\inetpub\wwwroot, Rename "upload" to "osTicket"
+  - Reload IIS and restart the server 
+  - On IIS click "Browse *:80"
+  - Note you may need to add extensions that are not enabled, to do so follow these steps:
+      - Go to IIS > sites > default > osTicket
+      - Double clicke PHP manager
+      - Click "Enable or disable an extension"
+          - Enable: php_imap.dll
+          - Enable: php_intl.dll
+          - Enable: php_opcache.dll
+          - Refresh the osTicket site in your browse, observe the changes
+  - Rename: ost-config.php
+  - Assign Permissions: ost-config.php
+  - Continue Setting up osTicket in the browser
+  - Install HeidiSQL
+  - Complete installation of osTicket in the browser
+ 
 </p>
 <br />
