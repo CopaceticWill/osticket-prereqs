@@ -65,17 +65,17 @@ In this image, you find the completed installation of osTicket v1.15.8 following
   
   - Install the osTicket file
   - Extract and copy the "upload" folder to c:\inetpub\wwwroot
-  - In the c:\inetpub\wwwroot, Rename "upload" to "osTicket"
+  - In the c:\inetpub\wwwroot, I renamed "upload" to "osTicket"
   - Reload IIS and restart the server 
   - On IIS click "Browse *:80"
-  - Note you may need to add extensions that are not enabled, to do so follow these steps:
+  - Add extensions that are not enabled, to do so follow these steps:
       - Go to IIS > sites > default > osTicket
-      - Double clicke PHP manager
+      - Double click PHP manager
       - Click "Enable or disable an extension"
           - Enable: php_imap.dll
           - Enable: php_intl.dll
           - Enable: php_opcache.dll
-          - Refresh the osTicket site in your browse, observe the changes
+          - Refresh the osTicket site browser, observe the changes
   - Rename: ost-config.php
   - Assign Permissions: ost-config.php
   - Continue Setting up osTicket in the browser
