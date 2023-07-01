@@ -29,9 +29,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install HeidiSQL and complete osTicket 
   
 <h2>Installation Steps</h2>
+<img />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/CopaceticWill/osticket-prereqs/assets/137100082/200114cd-9327-4861-80dc-37b395f54d76)
+
 </p>
 <p>
 The image above shows all the prerequisites downloaded to begin our installation of osTicket.  The steps I took to get to this result are the following:
@@ -45,7 +46,9 @@ The image above shows all the prerequisites downloaded to begin our installation
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/CopaceticWill/osticket-prereqs/assets/137100082/c44b2489-daa9-4b1c-b60e-bb3439c20dc2)
+
 </p>
 <p>
 In this step, I registered PHP from within IIS. The steps taken are the following:
@@ -58,7 +61,9 @@ In this step, I registered PHP from within IIS. The steps taken are the followin
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/CopaceticWill/osticket-prereqs/assets/137100082/770b9115-7c63-4e69-914a-8950c8ce72d6)
+
 </p>
 <p>
 In this image, you find the completed installation of osTicket v1.15.8 following these final steps in our installation from our prerequisites. 
